@@ -1,5 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 
 .sign-button {
@@ -92,6 +93,7 @@ header>.row {
 
 .primary-input,
 .primary-select {
+  font-family: 'Roboto';
   font-size: 13px;
   line-height: 24px;
   -webkit-appearance: none;
@@ -139,7 +141,7 @@ header>.row {
 footer {
   position: relative;
   color: #FFF;
-  width: inherit;
+  width: 100%;
   margin-top: 48px;
   background-color: #262626;
 }
@@ -269,7 +271,117 @@ footer>.row {
   color: #626262;
 }
 
-.restaurants-main {}
+.restaurants-main>.row {
+  max-width: 576px;
+  margin: 0 auto;
+}
+
+.top-offer {
+  width: 100%;
+  position: relative
+}
+
+.top-offer-card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  position: absolute;
+  bottom: -56px;
+  background-color: #FFF;
+  width: inherit;
+  box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+}
+
+.top-offer-card>.card-title {
+  margin-top: 24px;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.top-offer-card>.card-type {
+  font-size: 14px;
+}
+
+.top-offer-card>.card-time {
+  margin-top: 16px;
+  margin-bottom: 24px;
+  text-decoration: none;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 13px;
+  background-color: #262626;
+  color: #FFF;
+  border-radius: 16px;
+}
+
+.top-offer>img {
+  object-fit: cover;
+  width: 100%;
+  height: 256px;
+}
+
+.category-restaurant {
+  display: flex;
+  position: relative;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 112px;
+  /* Because top offer has -56px bottom positioning */
+  width: 100%;
+}
+
+.category-restaurant>br {
+  content: "";
+  margin: 0 auto;
+  height: 1px;
+  width: 50px;
+  border-bottom: 1px solid #757575;
+}
+
+.food-card {
+  display: flex;
+  width: 100%;
+  margin-top: 43px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.2)
+}
+
+.card-information {
+  display: flex;
+  flex: none;
+  width: 100%;
+  height: 100%;
+  flex-flow: column nowrap;
+  overflow: hidden;
+}
+
+.card-information>* {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-title {
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.card-type {
+  margin-top: 4px;
+  line-height: 21px;
+  font-size: 13px;
+}
+
+.card-cost {
+  margin-top: auto;
+  font-weight: 500;
+  line-height: 21px;
+  font-size: 15px;
+}
 
 @media only screen and (min-width: 576px) {
   header>.row,

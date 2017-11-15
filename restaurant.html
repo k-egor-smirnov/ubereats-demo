@@ -6,8 +6,8 @@
   <title>Ubereats</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext"
+    rel="stylesheet">
   <link rel="stylesheet" href="http://unpkg.com/flexboxgrid2">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -21,7 +21,7 @@
 
       <div class="col-lg-6 col-md-6 col-sm-6 delivery-grid">
         <div class="delivery delivery-header">
-          <select class="primary-select delivery-time">
+          <select class="primary-select delivery-time-select">
             <option value="ASAP">ASAP</option>
           </select>
 
@@ -44,7 +44,37 @@
   </header>
 
   <main class="restaurants-main">
-    <img src="photo.png" alt="restaurant">
+    <div class="row">
+      <div class="top-offer">
+        <img src="top-offer.png" alt="restaurant">
+        <div class="top-offer-card">
+          <h1 class="card-title">Трактир «Пушкин»</h1>
+          <span class="card-type">₽₽₽ • Европейская</span>
+          <a class="card-time" href="">
+            <span>40 - 50 Min</span>
+          </a>
+        </div>
+      </div>
+
+      <section class="category category-restaurant">
+        <h1 class="category-title">Закуски</h1>
+        <br>
+
+        <div class="food-card">
+          <div class="col-xs-8">
+            <div class="card-information">
+              <span class="card-title">Сельдь на бородинском</span>
+              <span class="card-description">С яйцом и огурцом</span>
+              <span class="card-cost">240 ₽</span>
+            </div>
+          </div>
+
+          <div class="col-xs-4">
+            <img src="food.png" alt="" class="card-image">
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer>

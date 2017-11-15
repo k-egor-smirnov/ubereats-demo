@@ -264,6 +264,11 @@ footer>.row {
   max-width: 229px;
 }
 
+.delivery-time>span,
+.delivery-to>span {
+  color: #626262;
+}
+
 .restaurants-main {}
 
 @media only screen and (min-width: 576px) {

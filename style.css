@@ -1,0 +1,349 @@
+* {
+  font-family: 'Roboto';
+}
+
+.sign-button {
+  border: 1px solid #E0E0E0;
+  background-color: #FFF;
+}
+
+.register-button {
+  color: #FFF;
+  background-color: #000;
+  border: none;
+}
+
+.header-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+
+/* 
+ */
+
+header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+header>.row {
+  border-bottom: 1px solid #FFF;
+  margin: 0 auto;
+  box-sizing: border-box;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.stores-main>.row {
+  max-width: 576px;
+  margin: 0 auto;
+}
+
+.stores-main>.row {
+  flex-flow: column nowrap;
+}
+
+.search-field {
+  background: url(search.svg) no-repeat scroll 7px 7px;
+  padding-left: 30px;
+  border-left: none !important;
+  border-right: none !important;
+  max-width: 100%;
+  margin-top: 16px;
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+
+.delivery {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+
+.delivery>* {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.delivery-time {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.delivery-to {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.primary-input,
+.primary-select {
+  font-size: 13px;
+  line-height: 24px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 1px solid #E0E0E0;
+}
+
+.primary-button {
+  font-size: 13px;
+  line-height: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 1px solid #E0E0E0;
+}
+
+.card {
+  margin-top: 16px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.card-restaurant {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card-type {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.card-time {
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.card-image {
+  width: 100%;
+}
+
+footer {
+  color: #FFF;
+  width: inherit;
+  margin-top: 48px;
+  background-color: #262626;
+}
+
+footer>.row {
+  max-width: 576px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.footer-logo>img {
+  height: 24px;
+  margin-top: 56px;
+  margin-bottom: 50px;
+}
+
+.footer-logo {
+  margin-left: 8px;
+  margin-right: 8px;
+  border-bottom: 1px solid#858585;
+}
+
+.lang-select {
+  color: #FFF;
+  background-color: #3B3B3B;
+  font-size: 13px;
+  line-height: 15px;
+  margin-top: 32px;
+}
+
+.footer-hashtag {
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 32px;
+  margin-left: 8px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.social {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 20px;
+  margin-left: 8px;
+}
+
+.footer-nav {
+  margin-top: 40px;
+  padding-bottom: 24px;
+}
+
+.footer-nav>* {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: 8px;
+}
+
+.footer-nav>*>a {
+  color: #FFF;
+  text-decoration: none;
+  display: block;
+  margin-top: 24px;
+}
+
+.apps-links {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid#858585;
+  border-top: 1px solid#858585;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.apps-links>* {
+  margin: 8px;
+}
+
+.delivery-grid {
+  display: none;
+}
+
+.category {
+  margin-top: 40px;
+}
+
+.footer-credits {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-credits>* {
+  margin-top: 24px;
+}
+
+.footer-credits>*>* {
+  color: #FFF;
+  font-size: 11px;
+  line-height: 13px;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 576px) {
+  header>.row,
+  .stores-main>.row,
+  footer>.row {
+    max-width: 768px;
+  }
+  .delivery-grid {
+    display: block;
+  }
+  .delivery-main {
+    display: none;
+  }
+  .delivery {
+    justify-content: flex-start;
+  }
+  .delivery>* {
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .delivery-adress {
+    width: 100%;
+    max-width: 229px;
+  }
+  .category {
+    margin-top: 56px;
+  }
+  .category-cards {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .card-restaurant {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .card-type {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .card-time {
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .footer-main-links {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .footer-content {
+    width: 100%;
+  }
+  .footer-nav {
+    margin-top: 0;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .footer-credits {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header>.row,
+  .stores-main>.row,
+  footer>.row {
+    max-width: 976px;
+  }
+  .delivery-grid {
+    display: block;
+  }
+  .delivery-main {
+    display: none;
+  }
+  .delivery {
+    justify-content: flex-start;
+  }
+  .delivery>* {
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .delivery-adress {
+    width: 100%;
+    max-width: 229px;
+  }
+  .category {
+    margin-top: 56px;
+  }
+  .category-cards {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .card-restaurant {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .card-type {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .card-time {
+    font-size: 13px;
+    line-height: 21px;
+  }
+}

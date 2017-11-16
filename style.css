@@ -279,17 +279,17 @@
       color: #626262;
     }
 
-    .restaurants-main>.row {
+    .restaurant-main>.row {
       max-width: 576px;
       margin: 0 auto;
     }
 
-    .top-offer {
+    .restaurant {
       width: 100%;
       position: relative
     }
 
-    .top-offer-card {
+    .restaurant-card {
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
@@ -301,18 +301,18 @@
       border-radius: 2px;
     }
 
-    .top-offer-card>.card-title {
+    .restaurant-card>.card-title {
       margin-top: 24px;
       margin-bottom: 40px;
       font-size: 24px;
     }
 
-    .top-offer-card>.top-card-information>.card-type {
+    .restaurant-card>.top-card-information>.card-type {
       font-size: 14px;
       color: #626262;
     }
 
-    .top-offer-card>.top-card-information>.card-time {
+    .restaurant-card>.top-card-information>.card-time {
       margin-top: 16px;
       margin-bottom: 24px;
       text-decoration: none;
@@ -327,7 +327,7 @@
       border-radius: 16px;
     }
 
-    .top-offer>img {
+    .restaurant>img {
       object-fit: cover;
       width: 100%;
       height: 256px;
@@ -410,7 +410,7 @@
     @media only screen and (min-width: 768px) {
       header>.row,
       .stores-main>.row,
-      .restaurants-main>.row,
+      .restaurant-main>.row,
       footer>.row {
         max-width: 768px;
       }
@@ -498,14 +498,14 @@
       .category-restaurant>br {
         display: none;
       }
-      .top-offer {
+      .restaurant {
         height: 364px;
         width: 100%;
       }
-      .top-offer>img {
+      .restaurant>img {
         height: inherit;
       }
-      .top-offer-card {
+      .restaurant-card {
         max-width: 392px;
         top: 25%;
         height: 204px;
@@ -534,7 +534,7 @@
     @media only screen and (min-width: 992px) {
       header>.row,
       .stores-main>.row,
-      .restaurants-main>.row,
+      .restaurant-main>.row,
       footer>.row {
         max-width: 976px;
       }

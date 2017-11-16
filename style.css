@@ -299,14 +299,16 @@
     font-size: 24px;
   }
 
-  .top-offer-card>.card-information>.card-type {
+  .top-offer-card>.top-card-information>.card-type {
     font-size: 14px;
+    color: #626262;
   }
 
-  .top-offer-card>.card-information>.card-time {
+  .top-offer-card>.top-card-information>.card-time {
     margin-top: 16px;
     margin-bottom: 24px;
     text-decoration: none;
+    text-align: center;
     padding-top: 9px;
     padding-bottom: 9px;
     padding-left: 16px;
@@ -354,6 +356,7 @@
     flex: none;
     width: 100%;
     height: 100%;
+    justify-content: center;
     flex-flow: column nowrap;
     overflow: hidden;
   }
@@ -362,6 +365,14 @@
     width: 100%;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+
+  .top-card-information {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-flow: column nowrap;
   }
 
   .card-title {
@@ -484,6 +495,9 @@
       max-width: 392px;
       top: 25%;
       height: 204px;
+    }
+    .top-card-information {
+      flex-flow: row nowrap;
     }
   }
 

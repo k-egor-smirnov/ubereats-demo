@@ -523,8 +523,12 @@
         margin-top: 32px;
         margin-bottom: 29px;
         text-decoration: none;
+        font-size: 16px;
         margin-right: 40px;
-        color: #327430;
+        color: #626262;
+      }
+      .restaurant-menu>*:first-child {
+        color: #327430
       }
       .cards-container {
         width: 100%;

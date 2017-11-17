@@ -55,7 +55,7 @@
     }
 
     .search-field {
-      background: url(search.svg) no-repeat scroll 7px 10px;
+      background: url(images/search.svg) no-repeat scroll 7px 10px;
       padding-left: 30px;
       border-top: none !important;
       border-left: none !important;
@@ -168,7 +168,7 @@
     .lang-select {
       padding-left: 32px;
       color: #FFF;
-      background: url(world.svg) no-repeat scroll 18px 9px;
+      background: url(images/world.svg) no-repeat scroll 18px 9px;
       border: none;
       width: 100%;
       background-color: #3B3B3B;
@@ -269,7 +269,7 @@
     }
 
     .delivery-adress {
-      background: url(location.svg) no-repeat scroll 8px 10px;
+      background: url(images/location.svg) no-repeat scroll 8px 10px;
       padding-left: 30px;
       max-width: 229px;
     }
@@ -527,7 +527,7 @@
         margin-right: 40px;
         color: #626262;
       }
-      .restaurant-menu>*:first-child {
+      .menu-link:first-child {
         color: #327430
       }
       .cards-container {
